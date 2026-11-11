@@ -101,17 +101,6 @@ function(windows_generate)
     target_link_options(
         godot-cpp
         PUBLIC
-            $<${NOT_MSVC}:
-                -Wl,--no-undefined
-                -Wl,--gc-sections
-                $<${STATIC_CPP}:
-                    -static
-                    -static-libgcc
-                    -static-libstdc++
-                >
-            >
-
-            $<${IS_CLANG}:-lstdc++>
     )
     # gersemi: on
 
