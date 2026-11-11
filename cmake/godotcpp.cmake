@@ -129,7 +129,7 @@ function(godotcpp_options)
 
     # Input from user for GDExtension interface header and the API JSON file
     set(GODOTCPP_API_VERSION
-        ""
+        "4.6"
         CACHE STRING
         "The Godot API version to target (ex \"4.5\") using one of the included API JSON files"
     )
