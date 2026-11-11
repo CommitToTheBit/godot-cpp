@@ -269,6 +269,7 @@ MethodBind *create_vararg_method_bind(R (T::*p_method)(const Variant **, GDExten
 	return a;
 }
 
+#define TYPED_METHOD_BIND
 #ifndef TYPED_METHOD_BIND
 class _gde_UnexistingClass;
 #define MB_T _gde_UnexistingClass
